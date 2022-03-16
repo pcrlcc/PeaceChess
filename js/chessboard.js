@@ -680,8 +680,6 @@
     var squareElsIds = {}
     var squareElsOffsets = {}
     var squareSize = 16
-    var clickMove = false
-
 
     // -------------------------------------------------------------------------
     // Validation / Errors
@@ -1245,16 +1243,6 @@
     }
 
     function dropDraggedPieceOnSquare (square) {
-           // if destination is same as source, piece stays picked up and is dropped at the next clicked square.
-           if (clickMove == false) {
-            if (square === draggedPieceSource) {
-              clickMove = true;
-              return;
-            }
-          }
-    
-          clickMove = false;
-
       removeSquareHighlights()
 
       // update position
@@ -1367,22 +1355,14 @@
       draggedPieceLocation = location
     }
 
-       function stopDraggedPiece (location) {
+    function stopDraggedPiece (location) {
       // determine what the action should be
       var action = 'drop'
-
       if (location === 'offboard' && config.dropOffBoard === 'snapback') {
         action = 'snapback'
-        clickMove = false;
-      } else {
-        if (clickMove == false) {
-          // pick up spare piece and put it down on next clicked square
-          clickMove = true;
-          return;
-        } else {
-          // drop piece back on its origin square
-          clickMove = false;
-        }
+      }
+      if (location === 'offboard' && config.dropOffBoard === 'trash') {
+        action = 'trash'
       }
 
       // run their onDrop function, which can potentially change the drop action

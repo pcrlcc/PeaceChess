@@ -37,11 +37,11 @@
             integrity="sha384-q94+BZtLrkL1/ohfjR8c6L+A6qzNH9R2hBLwyoAfu3i/WCvQjzL2RQJ3uNHDISdU"
             crossorigin="anonymous">
 
-            <!-- <script defer src="js/chessboard.js"></script> -->
+            <script defer src="js/chessboard.js"></script>
 
-        <script defer src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"
+        <!-- <script defer src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"
             integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD"
-            crossorigin="anonymous"></script>
+            crossorigin="anonymous"></script> -->
 
         <!-- Chess JS (slightly modified) -->
         <script defer src="js/chess.js"></script>
@@ -56,6 +56,11 @@
 
         <!-- Custom JS -->
         <script defer src="js/main.js"></script>
+        <script>
+        jQuery('#chess_board').on('scroll touchmove touchend touchstart contextmenu', function(e){
+            e.preventDefault();
+            });
+        </script>
     </head>
     <body>
         <main>
