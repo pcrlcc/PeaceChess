@@ -11,8 +11,8 @@ var board = null;
 var $board = $('#myBoard');
 var game = new Chess();
 var globalSum = 0; // always from black's perspective. Negative for white's perspective.
-var whiteSquareGrey = '#a9a9a9';
-var blackSquareGrey = '#696969';
+var whiteSquareGrey = 'rgba(255,255,255,.15)';
+var blackSquareGrey = 'rgba(0,0,0,.25)';
 
 var squareClass = 'square-55d63';
 var squareToHighlight = null;
@@ -358,9 +358,9 @@ function getBestMove(game, color, currSum) {
   positionCount = 0;
 
   if (color === 'b') {
-    var depth = parseInt($('#search-depth').find(':selected').text());
+    var depth = 2;
   } else {
-    var depth = parseInt($('#search-depth-white').find(':selected').text());
+    var depth = 2;
   }
 
   var d = new Date().getTime();

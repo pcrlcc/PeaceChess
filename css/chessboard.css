@@ -1,0 +1,52 @@
+/*! chessboard.js v1.0.0 | (c) 2019 Chris Oakman | MIT License chessboardjs.com/license */
+
+.clearfix-7da63 {
+  clear: both;
+}
+
+.board-b72b1 {
+  border: 0;
+  box-sizing: content-box;
+  background: rgb(58,125,246);
+  background: linear-gradient(142deg, rgba(58,125,246,1) 20%, rgba(247,204,68,1) 69%, rgba(247,204,68,1) 100%);}
+
+.square-55d63 {  
+  float: left;
+  position: relative;
+
+  /* disable any native browser highlighting */
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.white-1e1d7 {
+  background-color: rgba(0, 0, 0, 0);
+  color: #b58863;
+}
+
+.black-3c85d {
+  background-color: rgba(10, 0, 10, .18);
+  color: #f0d9b5;
+}
+
+.highlight1-32417, .highlight2-9c5d2 {
+  box-shadow: none;
+}
+
+.notation-322f9 {
+display: none;
+}
+
+.alpha-d2270 {
+  bottom: 1px;
+  right: 3px;
+}
+
+.numeric-fc462 {
+  top: 2px;
+  left: 2px;
+}
