@@ -316,6 +316,7 @@ function minimax(game, depth, alpha, beta, isMaximizingPlayer, sum, color) {
 function checkStatus(color) {
   if (game.in_checkmate()) {
     $('#status').html(`<b>Checkmate!</b>`);
+
   } else if (game.insufficient_material()) {
     $('#status').html(`It's a <b>draw!</b> (Insufficient Material)`);
   } else if (game.in_threefold_repetition()) {
@@ -325,7 +326,7 @@ function checkStatus(color) {
   } else if (game.in_draw()) {
     $('#status').html(`It's a <b>draw!</b> (50-move Rule)`);
   } else if (game.in_check()) {
-    $('#status').html(`Oops, <b>${color}</b> is in <b>check!</b>`);
+    $('#status').html(`Check!</b>`);
     return false;
   } else {
     $('#status').html(`No check, checkmate, or draw.`);

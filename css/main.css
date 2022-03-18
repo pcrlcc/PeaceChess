@@ -1,10 +1,11 @@
 
 
 body {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 16px;
   text-align: center;
+  overflow: hidden;
 }
 
 header {
@@ -14,10 +15,10 @@ header {
 
 
 #myBoard {
-  width: 98vw;
+  width: 100%;
   height: auto;
-  overflow: scroll;
- 
+  overflow: hidden;
+ margin: 0 auto;
 }
 
 #accordion {
@@ -77,14 +78,12 @@ a.fancy:hover {
 }
 
 
-.help {
-    padding-top: 20px;
-}
+
 
 h1 {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 12vw;
+  font-size: 8vh;
   margin: 0;
   line-height: 0.8;
   padding: 0;
