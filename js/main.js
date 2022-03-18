@@ -361,7 +361,7 @@ function getBestMove(game, color, currSum) {
   if (color === 'b') {
     var depth = 2;
   } else {
-    var depth = 2;
+    var depth = 3;
   }
 
   var d = new Date().getTime();
