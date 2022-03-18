@@ -1,5 +1,5 @@
 html {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 body {
   font-family: "Montserrat", sans-serif;
@@ -8,13 +8,12 @@ body {
   line-height: 1.5;
   background-color: #F0F0F0;
   text-align: center;
-  overflow: hidden;
   color: #2D2E32;
 
 }
 
 header {
-  margin: 1.3vh 0 2.5vh;
+  margin: 2vh 0 2.5vh;
 }
 
 
@@ -29,10 +28,8 @@ header {
 
 footer {
   text-align: center;
-  position: absolute;
-  padding-top: 6px;
-  bottom: 0;
-  left: 0;
+  padding-top: 10vh;
+
   width: 100%;
   height: 30px;
   color: #2D2E32;
