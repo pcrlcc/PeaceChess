@@ -36,19 +36,18 @@ h1 {
 }
 
 .info {
-    padding: 30px 4px;
+    padding: 30px 4px 40px;
     max-width: 55vh;
     margin: 0 auto;
 }
 
 footer {
   text-align: center;
-  padding: 16px 0 0 ;
+  padding: 14px 0 0 ;
   margin: 20px 0 0;
   width: 100vw;
   height: 30px;
-  color: #F0F0F0;
-  background-color: #2D2E32;
+  font-size: 12px;
 }
 
 footer a {
