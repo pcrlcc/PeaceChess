@@ -13,6 +13,7 @@ body {
   overflow-x: hidden;
 }
 
+
 header {
   margin: 4vw 0 2.5vh;
 }
@@ -32,6 +33,7 @@ h1 {
   height: auto;
   overflow: hidden;
   margin: 0 auto;
+  padding-left: 6px;
 }
 
 .info {
