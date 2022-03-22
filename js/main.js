@@ -37,22 +37,22 @@ timer = null;
  * https://github.com/thomasahle/sunfish/blob/master/sunfish.py
  */
 
-var weights = { p: 100, n: 280, b: 320, r: 479, q: 929, k: 60000, k_e: 60000 };
+var weights = { p: 100, n: 880, b: 320, r: 479, q: 929, k: 60000, k_e: 60000 };
 var pst_w = {
   p: [
     [100, 100, 100, 100, 105, 100, 100, 100],
     [78, 83, 86, 73, 102, 82, 85, 90],
     [7, 29, 21, 44, 40, 31, 44, 7],
     [-17, 16, -2, 15, 14, 0, 15, -13],
-    [-26, 3, 10, 9, 6, 1, 0, -23],
+    [-26, 3, 10, 30, 25, 10, 0, -23],
     [-22, 9, 5, -11, -10, -2, 3, -19],
     [-31, 8, -7, -37, -36, -14, 3, -31],
     [0, 0, 0, 0, 0, 0, 0, 0],
   ],
   n: [
-    [-66, -53, -75, -75, -10, -55, -58, -70],
-    [-3, -6, 100, -36, 4, 62, -4, -14],
-    [10, 67, 1, 74, 73, 27, 62, -2],
+    [66, 53, 75, 75, 10, 55, 58, 70],
+    [3, 6, 100, 36, 4, 62, 4, 14],
+    [10, 67, 60, 74, 73, 77, 62, -2],
     [24, 24, 45, 37, 33, 41, 25, 17],
     [-1, 5, 31, 21, 22, 35, 2, 0],
     [-18, 10, 13, 22, 18, 15, 11, -14],
@@ -316,7 +316,6 @@ function minimax(game, depth, alpha, beta, isMaximizingPlayer, sum, color) {
 function checkStatus(color) {
   if (game.in_checkmate()) {
     $('#status').html(`<b>Checkmate!</b> <a href=".">Play again?</a>`);
-
   } else if (game.insufficient_material()) {
     $('#status').html(`It's a <b>draw!</b> (Insufficient Material)`);
   } else if (game.in_threefold_repetition()) {
@@ -441,7 +440,7 @@ function compVsComp(color) {
         color = 'w';
       }
       compVsComp(color);
-    }, 250);
+    }, 300);
   }
 }
 

@@ -7,7 +7,7 @@
 .board-b72b1 {
   border: 0;
   box-sizing: content-box;
-  background: linear-gradient(142deg, rgba(58,125,246,1) 20%, rgba(247,204,68,1) 69%, rgba(247,204,68,1) 100%);
+  background: linear-gradient(142deg, rgba(240, 245, 254, 1) 20%, rgba(254, 251, 240, 1) 69%, rgba(254, 251, 240, 1) 100%);
 }
 
 .square-55d63 {  
@@ -29,7 +29,7 @@
 }
 
 .black-3c85d {
-  background-color: rgba(10, 0, 10, .15);
+  background-color: rgba(10, 0, 10, .08);
   color: #f0d9b5;
 }
 
