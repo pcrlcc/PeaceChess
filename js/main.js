@@ -36,16 +36,20 @@ timer = null;
  * Piece Square Tables, adapted from Sunfish.py:
  * https://github.com/thomasahle/sunfish/blob/master/sunfish.py
  */
+ 
+function getRandomInt(max) {
+   return Math.floor(Math.random() * max);
+ }
 
-var weights = { p: 100, n: 880, b: 320, r: 479, q: 929, k: 60000, k_e: 60000 };
+var weights = { p: 200, n: 880, b: 320, r: 479, q: 929, k: 60000, k_e: 60000 };
 var pst_w = {
   p: [
     [100, 100, 100, 100, 105, 100, 100, 100],
     [78, 83, 86, 73, 102, 82, 85, 90],
     [7, 29, 21, 44, 40, 31, 44, 7],
     [-17, 16, -2, 15, 14, 0, 15, -13],
-    [-26, 3, 10, 30, 25, 10, 0, -23],
-    [-22, 9, 5, -11, -10, -2, 3, -19],
+    [getRandomInt(10), getRandomInt(10), getRandomInt(20), getRandomInt(20), getRandomInt(20), getRandomInt(20), getRandomInt(10), getRandomInt(10)],
+    [getRandomInt(20), getRandomInt(20), getRandomInt(20), getRandomInt(20), getRandomInt(20), getRandomInt(20), getRandomInt(20), getRandomInt(20)],
     [-31, 8, -7, -37, -36, -14, 3, -31],
     [0, 0, 0, 0, 0, 0, 0, 0],
   ],
@@ -315,20 +319,20 @@ function minimax(game, depth, alpha, beta, isMaximizingPlayer, sum, color) {
 
 function checkStatus(color) {
   if (game.in_checkmate()) {
-    $('#status').html(`<b>Checkmate!</b> <a href=".">Play again?</a>`);
+    $('#status').html(`<b>Checkmate!</b> <a href="."><br>Play again?</a>`);
   } else if (game.insufficient_material()) {
-    $('#status').html(`It's a <b>draw!</b> (Insufficient Material)`);
+    $('#status').html(`It's a <b>draw!</b> (Insufficient Material)<br><a href=".">Play again?</a>`);
   } else if (game.in_threefold_repetition()) {
-    $('#status').html(`It's a <b>draw!</b> (Threefold Repetition)`);
+    $('#status').html(`It's a <b>draw!</b> (Threefold Repetition)<br><a href=".">Play again?</a>`);
   } else if (game.in_stalemate()) {
-    $('#status').html(`It's a <b>draw!</b> (Stalemate)`);
+    $('#status').html(`It's a <b>draw!</b> (Stalemate)<br><a href=".">Play again?</a>`);
   } else if (game.in_draw()) {
-    $('#status').html(`It's a <b>draw!</b> (50-move Rule)`);
+    $('#status').html(`It's a <b>draw!</b> (50-move Rule)<br><a href=".">Play again?</a>`);
   } else if (game.in_check()) {
-    $('#status').html(`Check!</b>`);
+    $('#status').html(`Check!</b><br><a href=".">Reset</a>`);
     return false;
   } else {
-    $('#status').html(`No check, checkmate, or draw.`);
+    $('#status').html(`No check, checkmate, or draw.<br><a href=".">Reset</a>`);
     return false;
   }
   return true;
