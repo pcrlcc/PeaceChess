@@ -5,12 +5,13 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 2vh;
+  font-size: 1.7vh;
   line-height: 1;
   text-align: center;
   color: #2D2E32;
   margin: 0;
   overflow-x: hidden;
+  background:  #2D2E32;
 }
 
 p {
@@ -20,7 +21,7 @@ p {
 
 header {
   position: relative;
-  margin: 4vh 0 2vh;
+  margin: 5% 0;
   color: #fff;
   z-index: 10;
 }
@@ -28,7 +29,7 @@ header {
 h1 {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 7.2vh;
+  font-size: 6.2vh;
   margin: 0;
   line-height: 0.8;
   padding: 0;
@@ -38,7 +39,7 @@ h1 {
 h5 {
   color: #fff;
   font-weight: 400;
-  font-size: 2vh;
+  font-size: inherit;
   margin: 1vh 0;
 }
 
