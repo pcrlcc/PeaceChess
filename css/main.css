@@ -22,8 +22,10 @@ p {
 
 
 header {
+  position: relative;
   margin: 5vh 0 2vh;
   color: #fff;
+  z-index: 10;
 }
 
 h1 {
@@ -54,6 +56,7 @@ main {
   left: 0;
   height: 100%;
   width: 100%;
+  z-index: 0;
 }
 
 
