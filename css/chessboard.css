@@ -8,7 +8,7 @@
   border: 0;
   box-sizing: content-box;
   background:rgba(22, 111, 255, 1);
-  background: linear-gradient(142deg, rgba(22, 111, 255, 1) 0%, rgba(255,202,16,1) 90%);
+  background: linear-gradient(142deg, rgba(22, 111, 255, 1) 20%, rgba(255,202,16,1) 69%, rgba(255,202,10,1) 100%);
 
 }
 
@@ -31,7 +31,7 @@
 }
 
 .black-3c85d {
-  background-color: rgba(10, 0, 10, .18);
+  background-color: rgba(10, 0, 10, .12);
   color: #f0d9b5;
 }
 
