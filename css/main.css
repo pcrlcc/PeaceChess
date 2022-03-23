@@ -21,7 +21,7 @@ p {
 
 header {
   position: relative;
-  margin: 5% 0;
+  margin: 5vh 0;
   color: #fff;
   z-index: 10;
 }
@@ -78,7 +78,7 @@ main {
 
 info {
   position: absolute;
-  top: 80%;
+  top: 81%;
   left: 0;
   width: 100%;
 }
