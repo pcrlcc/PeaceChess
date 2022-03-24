@@ -332,10 +332,10 @@ function checkStatus(color) {
   } else if (game.in_draw()) {
     $('#status').html(`It's a <b>draw!</b> (50-move Rule)<br><a href=".">Play again?</a>`);
   } else if (game.in_check()) {
-    $('#status').html(`Check!</b><br><a href=".">Reset</a>`);
+    $('#status').html(`<b>Check!</b><br><a href=".">Reset</a>`);
     return false;
   } else {
-    $('#status').html(`No check, checkmate, or draw.<br><a href=".">Reset</a>`);
+    $('#status').html(`No check or checkmate.<br><a href=".">Reset</a>`);
     return false;
   }
   return true;
