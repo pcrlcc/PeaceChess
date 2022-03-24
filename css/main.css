@@ -17,7 +17,7 @@ body {
   overflow-x: hidden;
   background: #468DFF;
 }
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
   body {
     font-size: 1.5vw;
   }
@@ -39,7 +39,7 @@ h1 {
   padding: 0;
   text-align: center;
 }
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
   h1 {
     font-size: 6vw;
   }
@@ -88,7 +88,7 @@ button {
   cursor: pointer;
   text-decoration: none;
 }
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
   button {
     font-size: 1.5vw;
   }
@@ -122,7 +122,7 @@ button:hover {
   padding-top: 3vh;
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
   .container1, .container2, .container3 {
     width: auto;
     height: auto;
@@ -151,7 +151,7 @@ button:hover {
     display: none;
   }
 }
-@media (max-width: 1299px) {
+@media (max-width: 999px) {
   .mobile-hidden {
     display: none;
   }
@@ -180,7 +180,7 @@ main {
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
   main {
     height: 70vh;
     width: 70vh;
