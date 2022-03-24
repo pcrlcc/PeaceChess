@@ -14,7 +14,7 @@ var board = null;
 var $board = $('#myBoard');
 var game = new Chess();
 var globalSum = 0; // always from black's perspective. Negative for white's perspective.
-var whiteSquareGrey = 'rgba(255,255,255,.15)';
+var whiteSquareGrey = 'rgba(255,255,255,.45)';
 var blackSquareGrey = 'rgba(0,0,0,.25)';
 
 var squareClass = 'square-55d63';
