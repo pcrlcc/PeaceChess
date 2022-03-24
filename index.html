@@ -2,70 +2,78 @@
 <html lang="en">
 
 <head>
-    <title>Peace Chess</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Peace Chess – #StopWar">
-    <meta charset="utf-8">
+  <title>Peace Chess</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ukraine is facing an unprecedented humanitarian catastrophe. Violence is never an option – promote peace, donate or volunteer now.">
+  <meta charset="utf-8">
 
-    <meta property="og:title" content="Peace Chess – #StopWar " />
-    <meta property="og:url" content="https://peace-chess.com" />
-    <meta property="og:image" content="https://www.peace-chess.com/img/og.png" />
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
-        </script>
+  <!-- Share Metadata-->
+  <meta property="og:title" content="Peace Chess"/>
+  <meta property="og:description" content="Ukraine is facing an unprecedented humanitarian catastrophe. Violence is never an option – promote peace, donate or volunteer now."/>
+  <meta property="og:url" content="https://peace-chess.com"/>
+  <meta property="og:image" content="https://www.peace-chess.com/img/og.png"/>
 
-    <!-- Chessboard JS -->
-    <link rel="stylesheet" href="css/chessboard.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+  </script>
 
-    <script defer src="js/chessboard.js"></script>
-
-    <!-- Chess JS (slightly modified) -->
-    <script defer src="js/chess.js"></script>
-    </script>
-
-    <!-- Custom JS -->
-    <script defer src="js/main.js"></script>
+  <!-- Chessboard JS -->
+  <link rel="stylesheet" href="css/chessboard.css">
+  <script defer src="js/chessboard.js"></script>
+  <!-- Chess JS (slightly modified) -->
+  <script defer src="js/chess.js"></script>
+  <!-- Custom JS -->
+  <script defer src="js/main.js"></script>
 
 </head>
-
 <body>
 
+  <div class="container1">
     <header>
-        <h1 >Peace</h1>
-        <h1 class="flip">Chess</h1>
-       <span id="status">Drag a piece to start or
-           <a id="compVsCompBtn">watch a game.</a>
-       </span>
-
+      <h1 >Peace</h1>
+      <h1 class="flip">Chess</h1>
+      <div class="readout">
+        <span id="status">Drag a piece to start or <br>
+          <a id="compVsCompBtn">watch a game.</a>
+        </span>
+      </div>
     </header>
-    
-    <main>
-        <div class="board-container">
-                <div id="myBoard" style="max-width: 55vh"></div>
-        </div>   
- 
-        </main>
-        
-        <info>
-            <a class="donate" href="//ukraine.who.foundation/?form=FUNWLUTAZDA" target="_blank">Donate to help</a>
-            <a class="donate yellow" href="//ukraine.who.foundation/?form=FUNWLUTAZDA" target="_blank">Donate to help</a>
-      
-        </info>
-        
-   <footer>
-   <a href="//github.com/pcrlcc/PeaceChess"  target="_blank">About</a>
-       </footer>
 
-<script async src="//static.getclicky.com/101359414.js"></script>
-       <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101359414ns.gif" /></p></noscript>
-       
+    <info class="mobile-hidden">
+      <button class="button-yellow" href="//ukraine.who.foundation/?form=FUNWLUTAZDA" target="_blank">Donate to help</button><br>
+      <a href="//github.com/pcrlcc/PeaceChess"  target="_blank">About</a>
+    </info>
+
+  </div>
+  <div class="container2">
+    <main>
+      <div class="board-container">
+        <div id="myBoard"></div>
+      </div>
+    </main>
+
+  </div>
+  <div class="container3">
+    <info>
+      <button class="donate" href="//ukraine.who.foundation/?form=FUNWLUTAZDA" target="_blank">Donate to help</button><br>
+      <a href="//github.com/pcrlcc/PeaceChess"  target="_blank" style="color: #1976d2">About</a>
+    </info>
+
+  </div>
+
+  <div class="background"></div>
+
+
+
+  <script async src="//static.getclicky.com/101359414.js"></script>
+  <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101359414ns.gif"/></p></noscript>
+
 </body>
 <script>
     jQuery('#myBoard').on('scroll touchmove touchend touchstart contextmenu', function (e) {
