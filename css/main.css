@@ -17,9 +17,9 @@ body {
   overflow-x: hidden;
   background: #468DFF;
 }
-@media (min-width: 1000px) {
+@media (min-width: 1300px) {
   body {
-    font-size: 2.5vh;
+    font-size: 1.5vw;
   }
 }
 
@@ -39,9 +39,9 @@ h1 {
   padding: 0;
   text-align: center;
 }
-@media (min-width: 1000px) {
+@media (min-width: 1300px) {
   h1 {
-    font-size: 8vh;
+    font-size: 6vw;
   }
 }
 .flip {
@@ -88,9 +88,9 @@ button {
   cursor: pointer;
   text-decoration: none;
 }
-@media (min-width: 1000px) {
+@media (min-width: 1300px) {
   button {
-    font-size: 2.5vh;
+    font-size: 1.5vw;
   }
 }
 button:hover {
@@ -114,33 +114,44 @@ button:hover {
   height: auto;
 }
 .container2 {
-  height: 90vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
 }
 .container3 {
   padding-top: 3vh;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1300px) {
   .container1, .container2, .container3 {
     width: auto;
     height: auto;
   }
   .container1 {
+    width: 30%;
+    height: 100%;
     position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
   .container2 {
+    width: 60%;
+    height: 100%;
     position: absolute;
-    top: 5%;
-    right: 10%;
+    top: 0;
+    right: 5%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
   }
   .container3 {
     display: none;
   }
 }
-@media (max-width: 999px) {
+@media (max-width: 1299px) {
   .mobile-hidden {
     display: none;
   }
@@ -159,12 +170,23 @@ header {
 main {
   overflow-x: hidden;
   display: table;
-  margin-left: 5vw;
   height: 90vw;
   width: 90vw;
-  z-index: 0;
 }
-@media (min-width: 1000px) {
+@media (min-width: 650px) {
+  main {
+    height: 600px;
+    width: 600px;
+  }
+}
+
+@media (min-width: 1300px) {
+  main {
+    height: 70vh;
+    width: 70vh;
+  }
+}
+@media (min-width: 1300px) {
   main {
     height: 90vh;
     width: 90vh;
