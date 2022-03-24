@@ -5,6 +5,9 @@
  * Copyright (c) 2020 Zhang Zeyu
  */
 
+window.onresize = function(){ location.reload(); }
+
+
 var STACK_SIZE = 100; // maximum size of undo stack
 
 var board = null;
