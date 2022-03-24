@@ -7,9 +7,7 @@
 .board-b72b1 {
   border: 0;
   box-sizing: content-box;
-  background:rgba(22, 111, 255, 1);
-  background: linear-gradient(142deg, rgba(70, 141, 255, 1) 20%, rgba(255, 214, 70, 1) 70%);
-}
+  }
 
 .square-55d63 {  
   float: left;
@@ -25,7 +23,7 @@
 }
 
 .white-1e1d7 {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, .1);
   color: #b58863;
 }
 

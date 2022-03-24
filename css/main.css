@@ -8,7 +8,7 @@ body {
   font-size: 1.7vh;
   line-height: 1;
   text-align: center;
-  color: #2D2E32;
+  color: #F1BC01;
   margin: 0;
   overflow-x: hidden;
   background:  #2D2E32;
@@ -22,7 +22,7 @@ p {
 header {
   position: relative;
   margin: 4vh 0;
-  color: #fff;
+  color: inherit;
   z-index: 10;
 }
 
@@ -37,14 +37,14 @@ h1 {
 }
 
 h5 {
-  color: #fff;
+  color: inherit;
   font-weight: 400;
   font-size: inherit;
   margin: 1vh 0;
 }
 
 h5 a {
-  color: #fff;
+  color: inherit;
 }
 
 main {
@@ -57,7 +57,7 @@ main {
   width: 100%;
   z-index: 0;
   background: rgb(255, 202, 16);
-  background: linear-gradient(0deg, rgba(255, 202, 16, 1) 0%, rgba(255, 202, 16, 1) 50%, rgba(86, 133, 212, 1) 50%, rgba(22, 111, 255, 1) 100%);
+  background: linear-gradient(302.71deg, #F1BC00 24.27%, #8F8F8F 40.5%, #468DFF 59.21%);
 }
 
 
@@ -88,6 +88,25 @@ info {
   color: #2D2E32;
 }
 
+.donate {
+  padding:0.4em 1.2em;
+  border-radius: 100px;
+  color:#F1BC01;
+  background-color:#1976d2;
+  border:0;
+  cursor:pointer;
+  margin:1em;
+  text-decoration: none;
+}
+
+.donate.yellow
+{
+    background-color:#F1BC01;
+    color: #468DFF;
+}
+
+
+
 
 
 footer {
@@ -101,7 +120,7 @@ footer {
 
 
 a {
-  color: #2D2E32;
+  color: inherit;
   text-decoration: underline;
   cursor: pointer;
 }
