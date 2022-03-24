@@ -120,6 +120,7 @@ button:hover {
 }
 .container3 {
   padding-top: 3vh;
+  padding-bottom: 10vh;
 }
 
 @media (min-width: 1000px) {
@@ -221,7 +222,7 @@ main {
 }
 
 .background {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
