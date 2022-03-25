@@ -6,7 +6,7 @@ Peace Chess is a small interactive experience, exploring how modifying chess rul
 
 
 ## Credits
-Peace chess was made by [Philipp](https://hallo.pm) and [Luke](https://calek.co) with the help of [Kevin](https://kvbx.de) and [Markus](https://wzlhfr.com).
+[Peace chess](https://peace-chess.com) was made by [Philipp](https://hallo.pm) and [Luke](https://calek.co) with the help of [Kevin](https://kvbx.de) and [Markus](https://wzlhfr.com).
 
 
 ## References
