@@ -335,7 +335,7 @@ function checkStatus(color) {
     $('#status').html(`<b>Check!</b><br><a href=".">Reset</a>`);
     return false;
   } else {
-    $('#status').html(`No check or checkmate.<br><a href=".">Reset</a>`);
+    $('#status').html(`Continue playing peacefully.<br><a href=".">Reset</a>`);
     return false;
   }
   return true;
