@@ -152,6 +152,14 @@ button:hover {
     display: none;
   }
 }
+@media (min-width: 1500px) {
+  .container1 {
+    width: 35%;
+  }
+  .container2 {
+    width: 55%;
+  }
+}
 @media (max-width: 999px) {
   .mobile-hidden {
     display: none;
