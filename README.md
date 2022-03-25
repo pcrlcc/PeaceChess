@@ -2,11 +2,11 @@
 ## About
 Ukraine is facing an unprecedented humanitarian catastrophe. Violence is never an option – promote peace, [donate or volunteer now](https://www.ukraine.who.foundation/?form=FUNWLUTAZDA).
 
-Peace Chess is a small interactive experience, exploring how modifying chess rules can send a message and hopefully make visitors think about how their actions can contribute to a better world. Can we play chess in a way that keeps everyone on the board?
+[Peace Chess](https://peace-chess.com) is a small interactive experience, exploring how modifying chess rules can send a message and hopefully make visitors think about how their actions can contribute to a better world. Can we play chess in a way that keeps everyone on the board?
 
 
 ## Credits
-[Peace chess](https://peace-chess.com) was made by [Philipp](https://hallo.pm) and [Luke](https://calek.co) with the help of [Kevin](https://kvbx.de) and [Markus](https://wzlhfr.com).
+Peace Chess was made by [Philipp](https://hallo.pm) and [Luke](https://calek.co) with the help of [Kevin](https://kvbx.de) and [Markus](https://wzlhfr.com).
 
 
 ## References
