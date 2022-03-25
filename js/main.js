@@ -5,7 +5,7 @@
  * Copyright (c) 2020 Zhang Zeyu
  */
 
-window.onresize = function(){ location.reload(); }
+// window.onresize = function(){ location.reload(); }
 
 
 var STACK_SIZE = 100; // maximum size of undo stack
@@ -39,7 +39,7 @@ timer = null;
  * Piece Square Tables, adapted from Sunfish.py:
  * https://github.com/thomasahle/sunfish/blob/master/sunfish.py
  */
- 
+
 function getRandomInt(max) {
    return Math.floor(Math.random() * max);
  }
