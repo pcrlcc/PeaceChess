@@ -322,20 +322,20 @@ function minimax(game, depth, alpha, beta, isMaximizingPlayer, sum, color) {
 
 function checkStatus(color) {
   if (game.in_checkmate()) {
-    $('#status').html(`<b>Checkmate!</b> <a href="."><br>Play again?</a>`);
+    $('#status').html(`<b>Checkmate!</b> <a href="." class="link-yellow"><br>Play again?</a>`);
   } else if (game.insufficient_material()) {
-    $('#status').html(`It's a <b>draw!</b> (Insufficient Material)<br><a href=".">Play again?</a>`);
+    $('#status').html(`It's a <b>draw!</b> (Insufficient Material)<br><a href="." class="link-yellow">Play again?</a>`);
   } else if (game.in_threefold_repetition()) {
-    $('#status').html(`It's a <b>draw!</b> (Threefold Repetition)<br><a href=".">Play again?</a>`);
+    $('#status').html(`It's a <b>draw!</b> (Threefold Repetition)<br><a href="." class="link-yellow">Play again?</a>`);
   } else if (game.in_stalemate()) {
-    $('#status').html(`It's a <b>draw!</b> (Stalemate)<br><a href=".">Play again?</a>`);
+    $('#status').html(`It's a <b>draw!</b> (Stalemate)<br><a href="." class="link-yellow">Play again?</a>`);
   } else if (game.in_draw()) {
-    $('#status').html(`It's a <b>draw!</b> (50-move Rule)<br><a href=".">Play again?</a>`);
+    $('#status').html(`It's a <b>draw!</b> (50-move Rule)<br><a href="." class="link-yellow">Play again?</a>`);
   } else if (game.in_check()) {
-    $('#status').html(`<b>Check!</b><br><a href=".">Reset</a>`);
+    $('#status').html(`<b>Check!</b><br><a href="." class="link-yellow">Reset</a>`);
     return false;
   } else {
-    $('#status').html(`Continue playing peacefully.<br><a href=".">Reset</a>`);
+    $('#status').html(`Continue playing peacefully.<br><a href="." class="link-yellow">Reset</a>`);
     return false;
   }
   return true;

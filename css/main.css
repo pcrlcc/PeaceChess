@@ -1,5 +1,19 @@
 
 
+/* ------- Colors ------- */
+
+/* Blue = #1976D2 */
+/* Blue Hover = #175899 */
+
+/* Yellow = #F1BC01 */
+/* Yellow Hover = #FEDD6A */
+
+/* White = #FFFFFF */
+/* Almost Black = #2D2E32 */
+
+
+
+
 /* ------- Structure ------- */
 
 html {
@@ -22,8 +36,6 @@ body {
     font-size: 1.5vw;
   }
 }
-
-
 
 
 
@@ -69,7 +81,18 @@ a {
   cursor: pointer;
 }
 
-
+.link-yellow {
+  color: #F1BC01;
+}
+.link-yellow:hover {
+  color: #FEDD6A;
+}
+.link-blue {
+  color: #1976D2;
+}
+.link-blue:hover {
+  color: #175899;
+}
 
 
 
@@ -101,8 +124,10 @@ button:hover {
     background-color: #F1BC01;
     color: #1976d2;
 }
-
-
+.button-yellow:hover {
+    background-color: #FEDD6A;
+    color: #1976d2;
+}
 
 
 
@@ -166,10 +191,6 @@ button:hover {
   }
 
 }
-
-
-
-
 
 header {
   margin: 4vh 0;
@@ -258,6 +279,8 @@ main {
 .highlight-hint {
   box-shadow: inset 0 0 3px 3px red;
 }
+
+
 
 
 
