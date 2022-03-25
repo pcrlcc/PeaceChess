@@ -9,8 +9,8 @@ Peace Chess is a small interactive experience, exploring how modifying chess rul
 Peace chess was made by [Philipp](https://hallo.pm) and [Luke](https://calek.co) with the help of [Kevin](https://kvbx.de) and [Markus](https://wzlhfr.com).
 
 
-## APIs
-This project is based on the following open source libraries:
+## Credits
+This project was built using the following open source libraries:
 - Chessboard GUI: [chessboard.js](https://www.chessboardjs.com)
 - Game Mechanics: [chess.js](https://github.com/jhlywa/chess.js/)
 - AI: [chess.ai](https://github.com/zeyu2001/chess-ai)
